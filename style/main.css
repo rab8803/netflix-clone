@@ -1,0 +1,149 @@
+:root{
+    --vermelho: #e50914;
+    --azul: rgb(43, 79, 224);
+    --preta: #141414;
+    --cinza: #707070;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* elementos base*/
+body{
+    background: lightgray;
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--azul);
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--azul);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #aaa;
+}
+  
+/*filme principal*/
+.filmeprincipal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/catar.capa.jpg');
+    
+    background-size: cover;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmeprincipal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.filmeprincipal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;   
+    
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+    
+}
+
+.container{
+    margin-left: 40px;
+}
+
+.filmeprincipal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+
+.item {
+    transition: 250ms all;
+    max-height: 349px;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    z-index: 1 ;
+}
+
+/*Footer*/
+.info{
+    margin: 20px 130px 0;
+    padding: 0 74px;
+}
+
+.info .footer-links{
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 14px;
+    max-width: 980px;
+    list-style-type: none;
+}
+
+.footer-links li{
+    margin: 0 0 16px;
+    width: 25%;
+}
+
+.footer-links li a{
+    color: gray;
+    text-decoration: none;
+}
